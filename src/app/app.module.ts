@@ -10,6 +10,9 @@ import { AppComponent } from './app.component';
 import { ImgComponent } from './pages/img/img.component';
 import { NavTabsComponent } from './pages/nav-tabs/nav-tabs.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { InsumosParaJardineriaComponent } from './pages/insumos-para-jardineria/insumos-para-jardineria.component';
+import { PortaMacetasComponent } from './pages/porta-macetas/porta-macetas.component';
+import { PlantasComponent } from './pages/plantas/plantas.component';
 
 
 
@@ -18,7 +21,10 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     AppComponent,
     ImgComponent,
     NavTabsComponent,
-    ContactoComponent
+    ContactoComponent,
+    InsumosParaJardineriaComponent,
+    PortaMacetasComponent,
+    PlantasComponent
   ],
   imports: [
     BrowserModule,
