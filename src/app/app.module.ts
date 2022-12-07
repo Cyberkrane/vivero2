@@ -13,6 +13,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { InsumosParaJardineriaComponent } from './pages/insumos-para-jardineria/insumos-para-jardineria.component';
 import { PortaMacetasComponent } from './pages/porta-macetas/porta-macetas.component';
 import { PlantasComponent } from './pages/plantas/plantas.component';
+import { CatusYSuculentasComponent } from './pages/catus-y-suculentas/catus-y-suculentas.component';
 
 
 
@@ -24,7 +25,8 @@ import { PlantasComponent } from './pages/plantas/plantas.component';
     ContactoComponent,
     InsumosParaJardineriaComponent,
     PortaMacetasComponent,
-    PlantasComponent
+    PlantasComponent,
+    CatusYSuculentasComponent
   ],
   imports: [
     BrowserModule,
