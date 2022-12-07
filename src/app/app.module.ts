@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { ImgComponent } from './pages/img/img.component';
 import { NavTabsComponent } from './pages/nav-tabs/nav-tabs.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { InsumosParaJardineriaComponent } from './pages/insumos-para-jardineria/insumos-para-jardineria.component';
 
 
 
@@ -18,7 +19,8 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     AppComponent,
     ImgComponent,
     NavTabsComponent,
-    ContactoComponent
+    ContactoComponent,
+    InsumosParaJardineriaComponent
   ],
   imports: [
     BrowserModule,
