@@ -7,13 +7,14 @@ import { AppComponent } from './app.component';
 // mis modulos
 
 // mis componentes
-import { ImgComponent } from './pages/img/img.component';
+import { ImgComponent } from './pages/shared/img/img.component';
 import { NavTabsComponent } from './pages/nav-tabs/nav-tabs.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { InsumosParaJardineriaComponent } from './pages/insumos-para-jardineria/insumos-para-jardineria.component';
 import { PortaMacetasComponent } from './pages/porta-macetas/porta-macetas.component';
 import { PlantasComponent } from './pages/plantas/plantas.component';
 import { CatusYSuculentasComponent } from './pages/catus-y-suculentas/catus-y-suculentas.component';
+
 
 
 
