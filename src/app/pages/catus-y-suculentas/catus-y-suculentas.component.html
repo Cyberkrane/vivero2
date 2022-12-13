@@ -1,131 +1,16 @@
-<div class="row justify-content-around align-items-center my-5">
+<div class="loader" *ngIf="kit.length == 0">
+  <app-loading></app-loading>
+</div>
+<div class="row m-5">
+  <div class="card col-2 m-4" *ngFor="let producto of kit">
+    <img src="{{ producto.img }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{producto.nombre}}</h5>
+      <p class="card-text">{{producto.descripcion}}</p>
+      <p class="card-text">{{producto.precio}}</p>
+      <a href="#" class="btn btn-primary">Comprar</a>
+    </div>
+  </div>
 
-    <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs1.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Aphelandra</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Calathea erchovena</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs10.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">calathea ornata</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs11.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Coleos</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs12.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Conejitos</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs2.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Crisantemo</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs3.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">crotton fideo</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Crotton mona lisa chico</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs4.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Crotton amarillo</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs5.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">dolar grande</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs6.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Ficus benjamina</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs7.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Gazania</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs7.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Geranio malbon</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-
-      <div class="card my-4" style="width: 18rem;">
-        <img src="../../../assets/img/cactus/cs8.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Helecho americano grande</h5>
-          <p class="card-text">Estos ganchos estan diseñados para soportar hasta 2kgs.</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
 
 </div>
