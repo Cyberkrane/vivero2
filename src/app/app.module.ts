@@ -19,6 +19,7 @@ import { LoadingComponent } from './pages/shared/loading/loading.component';
 import { MacetasBarroComponent } from './pages/macetas-barro/macetas-barro.component';
 import { MacetasDecoComponent } from './pages/macetas-deco/macetas-deco.component';
 import { MacetasPlasticoComponent } from './pages/macetas-plastico/macetas-plastico.component';
+import { CardComponent } from './pages/shared/card/card.component';
 
 
 
@@ -37,7 +38,8 @@ import { MacetasPlasticoComponent } from './pages/macetas-plastico/macetas-plast
     LoadingComponent,
     MacetasBarroComponent,
     MacetasDecoComponent,
-    MacetasPlasticoComponent
+    MacetasPlasticoComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

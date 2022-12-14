@@ -2,13 +2,25 @@
   <app-loading></app-loading>
 </div>
 <div class="row m-5">
+
   <div class="card col-2 m-4" *ngFor="let producto of kit">
-    <img src="{{ producto.img }}" class="card-img-top" alt="...">
+    <img src="{{ producto.img }}" class="card-img-top" width="350px" height="300px" alt="...">
     <div class="card-body">
-      <h5 class="card-title">{{producto.nombre}}</h5>
-      <p class="card-text">{{producto.descripcion}}</p>
-      <p class="card-text">{{producto.precio}}</p>
-      <a href="#" class="btn btn-primary">Comprar</a>
+      <div class="card-titlte">
+        <h5>{{producto.nombre}}</h5>
+      </div>
+      <div class="card-text">
+        <p>descripcion: </p>
+        <p>{{producto.descripcion}}</p>
+      </div>
+      <div class="card-text">
+        <p>presentacion: </p>
+        <p>{{producto.descripcion2}}</p>
+      </div>
+      
+      <p class="card-text precio">{{producto.precio | currency}}</p>
+
+      <a href="#" class="btn btn-primary mb-1">Comprar</a>
     </div>
   </div>
 

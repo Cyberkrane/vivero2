@@ -16,13 +16,13 @@ export class CatusYSuculentasComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log('Mostrando spinner......')
+    console.log('Mostrando cactus')
     setTimeout(() => {
       this.productosService.getCactus().subscribe(cactus => {
         this.kit = cactus
       });
       console.log(this.kit)
-    }, 2000);
+    }, 1000);
   }
 
 }
