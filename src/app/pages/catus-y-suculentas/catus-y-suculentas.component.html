@@ -4,7 +4,7 @@
 <div class="row m-5">
 
   <div class="card col-2 m-4" *ngFor="let producto of kit">
-    <img src="{{ producto.img }}" class="card-img-top" width="350px" height="300px" alt="...">
+    <img src="{{ producto.img }}" class="card-img-top" width="350px" height="300px" alt=" {{producto.nombre}} no encontrada">
     <div class="card-body">
       <div class="card-titlte">
         <h5>{{producto.nombre}}</h5>
