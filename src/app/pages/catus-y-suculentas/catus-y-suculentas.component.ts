@@ -3,12 +3,11 @@ import { Producto } from 'src/app/interface/producto';
 import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
-  selector: 'app-plantas',
-  templateUrl: './plantas.component.html',
-  styleUrls: ['./plantas.component.css']
+  selector: 'app-catus-y-suculentas',
+  templateUrl: './catus-y-suculentas.component.html',
+  styleUrls: ['./catus-y-suculentas.component.css']
 })
-export class PlantasComponent implements OnInit {
-
+export class CatusYSuculentasComponent implements OnInit {
 
   kit: Producto[] = [];
 
@@ -17,15 +16,13 @@ export class PlantasComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
-    console.log('Mostrando spinner......')
+    console.log('Mostrando cactus')
     setTimeout(() => {
-      this.productosService.getPlantas().subscribe(planta => {
-        this.kit = planta
+      this.productosService.getCactus().subscribe(cactus => {
+        this.kit = cactus
       });
       console.log(this.kit)
-    }, 2000);
-
+    }, 1000);
   }
 
 }

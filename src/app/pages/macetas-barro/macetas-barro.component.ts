@@ -3,11 +3,11 @@ import { Producto } from 'src/app/interface/producto';
 import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
-  selector: 'app-insumos-para-jardineria',
-  templateUrl: './insumos-para-jardineria.component.html',
-  styleUrls: ['./insumos-para-jardineria.component.css']
+  selector: 'app-macetas-barro',
+  templateUrl: './macetas-barro.component.html',
+  styleUrls: ['./macetas-barro.component.css']
 })
-export class InsumosParaJardineriaComponent implements OnInit {
+export class MacetasBarroComponent implements OnInit {
 
   kit: Producto[] = [];
 
@@ -18,11 +18,11 @@ export class InsumosParaJardineriaComponent implements OnInit {
   ngOnInit(): void {
     console.log('Mostrando spinner......')
     setTimeout(() => {
-      this.productosService.getInsumos().subscribe(insumos => {
-        this.kit = insumos
+      this.productosService.getMacetaB().subscribe(barro => {
+        this.kit = barro
       });
       console.log(this.kit)
-    }, 2000);
+    }, 1000);
   }
 
 }
