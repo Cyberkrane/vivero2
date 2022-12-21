@@ -1,0 +1,16 @@
+<div class="loader" *ngIf="kit.length == 0">
+  <app-loading></app-loading>
+</div>
+<div class="row m-5">
+  <div class="card col-2 m-4" *ngFor="let producto of kit">
+    <img src="{{ producto.img }}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{producto.nombre}}</h5>
+      <p class="card-text">{{producto.descripcion}}</p>
+      <p class="card-text">{{producto.precio}}</p>
+      <a href="#" class="btn btn-primary">Comprar</a>
+    </div>
+  </div>
+
+
+</div>

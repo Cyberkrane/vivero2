@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Producto } from 'src/app/interface/producto';
+import { ProductosService } from 'src/app/services/productos.service';
 
 @Component({
   selector: 'app-plantas',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlantasComponent implements OnInit {
 
-  constructor() { }
+
+  kit: Producto[] = [];
+
+  constructor(
+    private productosService: ProductosService,
+  ) { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.productosService.getPlantas().subscribe(planta => {
+        this.kit = planta
+      });
+    }, 500);
+
   }
 
 }
