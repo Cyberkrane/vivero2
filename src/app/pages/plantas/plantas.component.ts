@@ -17,14 +17,11 @@ export class PlantasComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-
-    console.log('Mostrando spinner......')
     setTimeout(() => {
       this.productosService.getPlantas().subscribe(planta => {
         this.kit = planta
       });
-      console.log(this.kit)
-    }, 2000);
+    }, 500);
 
   }
 
